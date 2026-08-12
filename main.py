@@ -13,10 +13,8 @@ GROUP_CHAT_ID = -5498910232
 START_DATE = date(2026, 7, 25)
 
 def get_message_text():
-    # Определяем сегодня по московскому времени
     today = datetime.now(ZoneInfo("Europe/Moscow")).date()
     
-    # Вычисляем номер дня челленджа
     day_count = (today - START_DATE).days + 1
     if day_count < 1:
         day_count = 1
